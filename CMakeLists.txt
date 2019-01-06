@@ -29,6 +29,7 @@ add_custom_command(
             --output ${CMAKE_CURRENT_BINARY_DIR}
             ${GLXW_EGL_OPTION}
     MAIN_DEPENDENCY ${CMAKE_CURRENT_SOURCE_DIR}/glxw_gen.py
+    DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/include/KHR/khrplatform.h
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
 
 add_custom_command(
